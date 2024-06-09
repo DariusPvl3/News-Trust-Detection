@@ -1,0 +1,153 @@
+
+body{
+  text-align: center;
+  height: 100%;
+}
+
+.urlForm{
+  margin-top: 4rem;
+  height: 110vh;
+  color: var(--primary-text-color);
+}
+
+.urlInput{
+  width: 30rem;
+  font-size: 20px;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.urlInput::placeholder{
+  color: var(--primary-text-color);
+  opacity: 0.7;
+}
+
+.text-container{
+  padding: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.articleTitle, .articleSite, .error{
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.error{
+  color: var(--error-text);
+}
+
+label{
+  font-size: 24px;
+  padding: 2rem;
+}
+
+.submitURL{
+  padding: 1em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--primary-text-color);
+  transition: all 0.3s ease-out;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.submitURL:hover{
+  background-color: var(--hover-accent);
+  color: var(--primary-text-color);
+  transition: all 0.3s ease-out;
+}
+
+.categorySelect{
+  margin-top: 1.5rem;
+  font-size: 18px;
+  padding: 8px 20px;
+  border: 1px solid var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  border-radius: 1rem;
+}
+
+.credibility{
+  font-size: 20px;
+}
+
+.credibility p{
+  margin-top: 1rem;
+}
+
+.results-container{
+  margin-top: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.results-container > p{
+  font-size: 1.5rem;
+}
+
+.resultDetails{
+  margin-top: 1rem;
+}
+
+.resultDetails > p{
+  margin-top: 0.5rem;
+}
+
+.detailsBtn{
+  margin-top: 2rem;
+  padding: 8px 20px;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--primary-text-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.detailsBtn:hover{
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+}
+
+.modal-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.modal-content p {
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+
+@media screen and (max-width: 575px){
+  .urlInput{
+    width: 80%;
+  }
+}
