@@ -1,0 +1,79 @@
+body{
+    text-align: center;
+    height: 100%;
+}
+
+.main{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.info-box{
+    background-color: var(--secondary-bg-color);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1.5rem;
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 750px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    height: 450px;
+    overflow-x: hidden;
+}
+
+.info-box::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.info-box::-webkit-scrollbar-track{
+    background: var(--background-color);
+    border-radius: 1rem;
+}
+
+.info-box::-webkit-scrollbar-thumb{
+    background: var(--accent-color);
+    border-radius: 1rem;
+}
+
+.info-wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
+
+.info-box h2{
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+.info-box p{
+    padding: 1rem;
+    margin-bottom: -1rem;
+}
+
+.info-box ul{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        display: block;
+    }
+
+    .info-box h2{
+        margin-top: -2rem;
+    }
+}
