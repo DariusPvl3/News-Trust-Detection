@@ -13,19 +13,19 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 
 # Load the Romanian language model from spaCy
-nlp_ro = spacy.load("ro_core_news_sm")
+nlp_ro = spacy.load("ro_core_news_lg")
 
 
 def wordopt(text):
     if isinstance(text, str):
         text = text.lower()
-        text = re.sub("\\[.*?\\]", "", text)
-        text = re.sub("\\W", " ", text)
-        text = re.sub("https?://\\S+|www\\.\\S+", "", text)
-        text = re.sub("<.*?>+", "", text)
-        text = re.sub("[%s]" % re.escape(string.punctuation), "", text)
-        text = re.sub("\n", "", text)
-        text = re.sub("\\w*\\d\\w*", "", text)
+        text = re.sub(r"https?://\S+|www\.\S+", "", text)
+        text = re.sub(r"\[.*?\]", "", text)
+        text = re.sub(r"<.*?>+", "", text)
+        text = re.sub(r"\W", " ", text)
+        text = re.sub(r"[%s]" % re.escape(string.punctuation), "", text)
+        text = re.sub(r"\n", "", text)
+        text = re.sub(r"\w*\d\w*", "", text)
         text = " ".join([word for word in text.split() if word not in stopwords_ro])
         text = " ".join([token.lemma_ for token in nlp_ro(text)])
     return text
@@ -106,7 +106,7 @@ def train_model():
     x_train, x_test, y_train, y_test = train_test_split(
         data[feature_columns],
         data["Credibilate"],
-        test_size=0.30,
+        test_size=0.20,
         stratify=data["Credibilate"],
     )
 
