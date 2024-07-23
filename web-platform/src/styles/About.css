@@ -58,7 +58,6 @@
   border-radius: 1rem;
 }
 
-/* Dark theme scrollbar styles */
 [data-theme="dark"] *::-webkit-scrollbar-track {
   background: #1D2125;
 }
