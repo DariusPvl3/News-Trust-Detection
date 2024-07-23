@@ -1,4 +1,3 @@
-// postsData.js
 export const postsData = [
   {
     titleImg: "src/assets/fake-news1.png",
@@ -66,27 +65,22 @@ export const postsData = [
       {
         type: "text",
         value:
-          "Știrile false au un impact semnificativ asupra societății noastre, afectând atât percepția publicului cât și deciziile politice. În acest articol, vom explora diversele efecte ale dezinformării.",
+          "Știrile false au un impact semnificativ asupra societății noastre, afectând atât percepția publicului, cât și deciziile politice. În acest articol sunt prezentate câteva dintre diversele efecte ale dezinformării.",
       },
       {
         type: "text",
         value:
-          "1. Polarizarea opiniei publice: Știrile false contribuie la polarizarea extremă a opiniilor, creând diviziuni în societate și între grupuri sociale.",
-      },
-      {
-        type: "image",
-        src: "src/assets/polarization.png",
-        alt: "Polarizarea opiniei publice",
+          "1. Împărţirea opiniei publice: Știrile false contribuie major la formarea de opinii extreme, care pot creea diviziuni în societate și între grupuri sociale.",
       },
       {
         type: "text",
         value:
-          "2. Dezinformarea electorală: În campaniile electorale, știrile false pot influența votanții și pot altera rezultatele alegerilor. Exemplele recente arată cât de ușor se poate manipula opinia publică.",
+          "2. Dezinformarea electorală: În campaniile electorale, știrile şi declaraţiile false pot influența votanții și pot altera rezultatele alegerilor. Astfel, persoane politice ale căror declaraţii nu sunt verificate şi aduse la cunoştinţa publicului pot influenţa alegătorii în favoarea acestora.",
       },
       {
         type: "text",
         value:
-          "3. Pierderea încrederii în mass-media: Odată cu răspândirea știrilor false, publicul își pierde încrederea în sursele de știri tradiționale, ceea ce duce la un cerc vicios de dezinformare.",
+          "3. Pierderea încrederii în mass-media: Odată cu răspândirea știrilor false, publicul își pierde încrederea în sursele de știri tradiționale, fenomen ce duce la un cerc vicios de dezinformare.",
       },
       {
         type: "text",
@@ -94,19 +88,14 @@ export const postsData = [
           "4. Efecte economice: Dezinformarea poate afecta piețele financiare și economiile, prin răspândirea de zvonuri false care influențează deciziile de investiții.",
       },
       {
-        type: "image",
-        src: "src/assets/economic-impact.png",
-        alt: "Efecte economice",
+        type: "text",
+        value:
+          "5. Impact asupra sănătății publice: În cazul pandemiei COVID-19, știrile false au dus la dezinformare privind tratamentele și măsurile de prevenție, afectând sănătatea populaţiei.",
       },
       {
         type: "text",
         value:
-          "5. Impact asupra sănătății publice: În cazul pandemiei COVID-19, știrile false au dus la dezinformare privind tratamentele și măsurile de prevenție, afectând sănătatea publicului.",
-      },
-      {
-        type: "text",
-        value:
-          "Este esențial să dezvoltăm abilități de gândire critică și să promovăm educația media pentru a combate efectele negative ale știrilor false.",
+          "Având în vedere modul în care societatea poate fi influenţată negativ de dezinformare, este esențial să dezvoltăm abilități de gândire critică și să promovăm educația media pentru a combate efectele negative ale știrilor false.",
       },
     ],
   },
