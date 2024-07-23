@@ -30,19 +30,19 @@ export const Footer = () => {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
-                        <Link className="social-logo" to="/"><img src={logo}></img></Link>
+                        <Link className="social-logo" to="/"><img src={logo} alt="Logo"></img></Link>
                     </div>
                     <small className="website-rights">&copy;{new Date().getFullYear()} Pavăl Darius-Cosmin | Universitatea de Vest din Timişoara</small>
                     <div className="social-icons">
-                        <Link className="social-icon-link linkedin" to='' target="_blank" aria-label="LinkedIn">
+                        <a className="social-icon-link linkedin" href="https://www.linkedin.com/in/pavăl-darius-cosmin-b7bbab1b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i className="fab fa-linkedin"></i>
-                        </Link>
-                        <Link className="social-icon-link instagram" to='' target="_blank" aria-label="Instagram">
+                        </a>
+                        <a className="social-icon-link instagram" href="https://www.instagram.com/dariuss.3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <i className="fab fa-instagram"></i>
-                        </Link>
-                        <Link className="social-icon-link github" to='' target="_blank" aria-label="Github">
+                        </a>
+                        <a className="social-icon-link github" href="https://github.com/DariusPvl3" target="_blank" rel="noopener noreferrer" aria-label="Github">
                             <i className="fab fa-github"></i>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>
